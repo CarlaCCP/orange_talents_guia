@@ -1,0 +1,39 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="contas">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.com.alura.jpa.modelo.Conta</class>
+		<class>br.com.alura.jpa.modelo.ContaMovimentacao</class>
+		<properties>
+			<!--faremos todas as configurações que precisamos dentro de uma unidade 
+				de persistência para acessarmos o banco, a classe do driver MySQL utilizada 
+				na comunicação e etc. -->
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+				
+			<!-- Mesmo link que é utilizado pelo jpa -->
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3307/alura_jpa" />
+				
+				<!--  O root e a senha do banco de dados -->
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="cccp2040" />
+				
+				<!--  é sobre o dialeto que será coonversado com o banco de dados -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+				
+				<!--  Aqui fala sobre a forma que poderemos ver e atualizar o banco de dados -->
+			<property name="hibernate.show_sql" value="true" /> <!-- querys aparecerão no console -->
+			<property name="hibernate.format_sql" value="true" /> <!-- poderemos dar create, alter e drop -->
+
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!--  Atualizará o banco de dados -->
+
+		</properties>
+	</persistence-unit>
+</persistence>
