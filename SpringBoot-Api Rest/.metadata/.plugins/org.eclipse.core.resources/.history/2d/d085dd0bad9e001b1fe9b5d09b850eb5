@@ -1,0 +1,5 @@
+package br.com.orange.forum.config.validacao;
+
+public class ErroValidacaoHadler {
+
+}

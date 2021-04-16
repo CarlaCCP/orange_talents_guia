@@ -1,0 +1,22 @@
+package br.com.orange.forum.config.validacao;
+
+public class ErroFormularioDTo {
+	
+	private String campo;
+	private String mensagem;
+	
+	public ErroFormularioDTo (String campo, String mensagem) {
+		this.campo = campo;
+	}
+
+	public String getCampo() {
+		return campo;
+	}
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+	
+	
+}
