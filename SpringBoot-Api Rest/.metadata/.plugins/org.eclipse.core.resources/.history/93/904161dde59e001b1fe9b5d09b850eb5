@@ -1,0 +1,21 @@
+package br.com.orange.forum.controller;
+
+public class AlunoDetalhe {
+	private String nome;
+	private String email;
+	
+	public AlunoDetalhe(AlunoDTO dto)
+	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public String getEmail() {
+		return email;
+	}
+	
+	
+	
+
+}

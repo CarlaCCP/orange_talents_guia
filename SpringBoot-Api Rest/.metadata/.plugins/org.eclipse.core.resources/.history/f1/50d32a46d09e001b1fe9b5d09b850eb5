@@ -1,0 +1,10 @@
+spring.datasource.url=jdbc:mysql://localhost:8080/bancoAluno?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSl=false
+spring.datasource.username=root
+spring.datasource.password=
+
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+
+

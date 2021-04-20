@@ -1,0 +1,53 @@
+package br.com.testeOrange.cadastraAluno.controles;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Length;
+
+import com.sun.istack.NotNull;
+
+import br.com.testeOrange.cadastraAluno.modelo.Aluno;
+import repository.AlunoRepository;
+
+public class AlunoForm {
+	
+
+	@NotNull @NotBlank @Length(max = 0)
+	private String nome;
+	@NotNull @NotBlank @Length(max = 0)
+	private String email;
+	@Min(18)
+	private int idade;
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	// public Topico converter(CursoRepository cursoRepository) {
+	//Curso curso = cursoRepository.findByNome(nomeCurso);
+	//return new Topico(titulo, mensagem,curso );
+	
+	public Aluno converter (AlunoRepository repository) {
+		Aluno aluno = new Aluno(nome, email, idade);
+		return aluno;
+}
+	
+	
+}

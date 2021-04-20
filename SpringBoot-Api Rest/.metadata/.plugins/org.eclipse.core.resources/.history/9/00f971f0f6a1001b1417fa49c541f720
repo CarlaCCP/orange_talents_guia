@@ -1,0 +1,5 @@
+package br.com.testeOrange.cadastraAluno.repository;
+
+public class UsuarioRepository {
+
+}

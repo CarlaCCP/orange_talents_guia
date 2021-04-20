@@ -1,0 +1,5 @@
+package br.com.testeOrange.cadastraAluno.config;
+
+public class ErroValidacaoHandler {
+
+}

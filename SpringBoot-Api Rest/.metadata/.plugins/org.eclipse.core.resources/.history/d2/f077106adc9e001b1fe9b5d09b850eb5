@@ -1,0 +1,30 @@
+package controles;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import modelo.Aluno;
+import repository.AlunoRepository;
+
+@RequestMapping("/aluno")
+@RestController
+public class AlunoController {
+	
+	@Autowired
+	private AlunoRepository repository;
+	
+	
+	public ResponseEntity<AlunoDTO> cadastrar (@RequestBody @Valid  Aluno aluno, 
+			UriComponentsBuilder uriBuilder ){
+		
+	repository.save(aluno);
+	}
+	
+	
+}
