@@ -1,5 +1,0 @@
-package br.com.testeOrange.cadastraAluno.config.security;
-
-public class TokenService {
-
-}

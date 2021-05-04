@@ -1,5 +1,0 @@
-package br.com.testeOrange.repository;
-
-public interface AlunoRepository {
-
-}

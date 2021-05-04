@@ -64,11 +64,21 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\carla.paula\Desktop\CasaDoCodigo\orange-talents-04-template-casa-do-codigo\casa-do-codigo"/>
+			<item value="C:\Users\carla.paula\Desktop\CasaDoCodigo"/>
+			<item value="C:\Users\carla.paula\Downloads\SOLID-com-Java-Orienta-o-a-Objetos-com-Java-088bcff58e051e8546e583898d539dd979501ef7"/>
+			<item value="C:\Users\carla.paula\Downloads\1795-curso-spring-data-aula-2.5"/>
+			<item value="C:\Users\carla.paula\Downloads\springData"/>
+			<item value="C:\Users\carla.paula\Downloads\1843-spring-parte3-testes-deploy-aula_3"/>
+			<item value="C:\Users\carla.paula\Downloads\1843-spring-parte3-testes-deploy-projeto-inicial"/>
+			<item value="C:\Users\carla.paula\Downloads\monitoramento"/>
 			<item value="C:\Users\carla.paula\Downloads\projeto-inicial"/>
 			<item value="C:\Users\carla.paula\Downloads\cadastraAluno"/>
 			<item value="C:\Users\carla.paula\Downloads\forum"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="SpringBootTestes"/>
+			<item value="SpringBoot-Teste"/>
 			<item value="SpringSecurity"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
